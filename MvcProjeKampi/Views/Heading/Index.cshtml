@@ -5,6 +5,8 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 @{ string color = "";}
+@{ string colorStatus = "";}
+@{ string statusTurkish = "";}
 
 <!DOCTYPE html>
 <html>
@@ -48,6 +50,9 @@
                             <th style="width: 30%">
                                 Oluşturan Yazar
                             </th>
+                            <th style="width: 15%">
+                                Durum
+                            </th>
                             <th style="width: 8%" class="text-center">
                                 Kategori
                             </th>
@@ -61,7 +66,7 @@
                             if (item.Category.CategoryName == "Tiyatro")
                             {
                                 color = "badge badge-danger";
-                            } 
+                            }
                             if (item.Category.CategoryName == "Kitap")
                             {
                                 color = "badge badge-warning";
@@ -77,7 +82,7 @@
                             if (item.Category.CategoryName == "Dizi")
                             {
                                 color = "badge badge-primary";
-                            } 
+                            }
                             if (item.Category.CategoryName == "Film")
                             {
                                 color = "badge badge-secondary";
@@ -85,6 +90,16 @@
                             if (item.Category.CategoryName == "Eğitim")
                             {
                                 color = "badge badge-secondary";
+                            }
+                            if (item.HeadingStatus == false)
+                            {
+                                colorStatus = "badge badge-danger";
+                                statusTurkish = "Pasif";
+                            }
+                            if (item.HeadingStatus == true)
+                            {
+                                colorStatus = "badge badge-success";
+                                statusTurkish = "Aktif";
                             }
                             <tr>
                                 <td>
@@ -96,7 +111,7 @@
                                     </a>
                                     <br />
                                     <small>
-                                        @(((DateTime)item.HeadingDate).ToString("dd-MMM-yyyy"));
+                                        @(((DateTime)item.HeadingDate).ToString("dd-MMM-yyyy"))
                                     </small>
                                 </td>
                                 <td>
@@ -106,21 +121,24 @@
                                         </li>
                                     </ul>
                                 </td>
+                                <td>
+                                    <span class="@colorStatus">@statusTurkish</span>
+                                </td>
                                 <td class="project-state">
                                     <span class="@color">@item.Category.CategoryName</span>
                                 </td>
                                 <td class="project-actions text-right">
-                                    <a class="btn btn-primary btn-sm" href="#">
+                                    <a class="btn btn-primary btn-sm" href="/Content/ContentByHeading/@item.HeadingID">
                                         <i class="fas fa-folder">
                                         </i>
                                         Yazılar
                                     </a>
-                                    <a class="btn btn-info btn-sm" href="#">
+                                    <a class="btn btn-info btn-sm" href="/Heading/EditHeading/@item.HeadingID">
                                         <i class="fas fa-pencil-alt">
                                         </i>
                                         Düzenle
                                     </a>
-                                    <a class="btn btn-danger btn-sm" href="#">
+                                    <a class="btn btn-danger btn-sm" href="/Heading/DeleteHeading/@item.HeadingID">
                                         <i class="fas fa-trash">
                                         </i>
                                         Sil
@@ -137,6 +155,7 @@
     </section>
 </body>
 </html>
+<a href="/Heading/AddHeading" class="btn btn-primary">Yeni Başlık Girişi</a>
 
 
 

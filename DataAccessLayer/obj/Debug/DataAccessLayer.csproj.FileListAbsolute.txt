@@ -18,3 +18,8 @@ C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\Data
 C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writer_edit.resources
 C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writertitle_add.resources
 C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_imagesizechange.resources
+C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writer_addstatus.resources
+C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_content_status_add.resources
+C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_heading_status_add.resources
+C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_add_message.resources
+C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_message_MessageContent_change.resources
