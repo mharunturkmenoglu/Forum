@@ -26,7 +26,8 @@ namespace MvcProjeKampi.Controllers
         }
         public PartialViewResult ContactPartial()
         {
-            return PartialView();
+            var values = cm.GetList();
+            return PartialView(values);
         }
     }
 }

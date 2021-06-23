@@ -33,7 +33,7 @@ namespace BusinessLayer.Concrete
             return _message.List(x => x.SenderMail == "admin@gmail.com");
         }
 
-        public void MessageAddBL(Message message)
+        public void MessageAdd(Message message)
         {
             _message.Insert(message);
         }

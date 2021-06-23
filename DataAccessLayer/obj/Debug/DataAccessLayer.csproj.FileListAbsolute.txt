@@ -23,3 +23,6 @@ C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\Data
 C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_heading_status_add.resources
 C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_add_message.resources
 C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_message_MessageContent_change.resources
+C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_contact_add_date.resources
+C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_addImageFile.resources
+C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_add_admin_class.resources
