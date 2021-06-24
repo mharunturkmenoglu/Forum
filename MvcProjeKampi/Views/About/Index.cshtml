@@ -1,5 +1,9 @@
 ﻿@using EntityLayer.Concrete
 @model List<About>
+
+@{string color = "";}
+@{string statusText = "";}
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
@@ -10,18 +14,27 @@
     <tr>
         <th>ID</th>
         <th>Hakkımda Başlığı</th>
-        <th>Aktif Yap</th>
-        <th>Pasif Yap</th>
+        <th>Aktif/Pasif Yap</th>
     </tr>
     @foreach (var item in Model)
     {
         <tr>
             <td>@item.AboutID</td>
             <td>Başlık</td>
-            <td><a href="#" class="btn btn-warning">Aktif yap</a></td>
-            <td><a href="#" class="btn btn-danger">Pasif Yap</a></td>
+
+            @if (item.AboutStatus == true)
+            {
+                color = "btn btn-danger";
+                statusText = "Pasif Yap";
+            }
+            @if (item.AboutStatus == false)
+            {
+                color = "btn btn-warning";
+                statusText = "Aktif Yap";
+            }
+            <td><a href="/About/AboutUpdate/@item.AboutID" class="@color">@statusText</a></td>
+
         </tr>
     }
 </table>
-
-@Html.Action("AboutPartial","About")
+@Html.Action("AboutPartial", "About")
