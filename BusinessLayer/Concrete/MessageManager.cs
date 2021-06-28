@@ -25,12 +25,12 @@ namespace BusinessLayer.Concrete
 
         public List<Message> GetListInbox()
         {
-            return _message.List(x=>x.RecieverMail=="admin@gmail.com");
+            return _message.List(x=>x.RecieverMail== "gkilinc@gmail.com");
         }
 
         public List<Message> GetListSendbox()
         {
-            return _message.List(x => x.SenderMail == "admin@gmail.com");
+            return _message.List(x => x.SenderMail == "gkilinc@gmail.com");
         }
 
         public void MessageAdd(Message message)

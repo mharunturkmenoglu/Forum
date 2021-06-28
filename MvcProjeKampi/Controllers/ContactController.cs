@@ -14,6 +14,8 @@ namespace MvcProjeKampi.Controllers
         // GET: Contact
         ContactManager cm = new ContactManager(new EfContactDal());
         ContactValidator cv = new ContactValidator();
+
+        [AllowAnonymous]
         public ActionResult Index()
         {
             var contactvalues = cm.GetList();
@@ -24,6 +26,7 @@ namespace MvcProjeKampi.Controllers
             var contactvalues = cm.GetByID(id);
             return View(contactvalues);
         }
+        [AllowAnonymous]
         public PartialViewResult ContactPartial()
         {
             var values = cm.GetList();

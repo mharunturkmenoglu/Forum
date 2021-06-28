@@ -27,3 +27,6 @@ C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\Data
 C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_addImageFile.resources
 C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_add_admin_class.resources
 C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_aboutStatus_add.resources
+C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_admin_usernameAndPasswordLenghtChange.resources
+C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_skill_added.resources
+C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_skill_new_column_about.resources

@@ -54,6 +54,7 @@ namespace MvcProjeKampi.Controllers
 
             if (result.IsValid)
             {
+                p.SenderMail = "gkilinc@gmail.com";
                 p.MessageDate = DateTime.Parse(DateTime.Now.ToShortDateString());
                 mm.MessageAdd(p);
                 return RedirectToAction("Sendbox");
