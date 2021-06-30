@@ -18,9 +18,15 @@ namespace MvcProjeKampi.Controllers
         // GET: Message
 
         [Authorize]
-        public ActionResult Inbox()
+        public ActionResult Inbox(string p)
         {
-            var messagelist = mm.GetListInbox();
+            var messagelist = mm.GetListInbox(p);
+            return View(messagelist);
+        }
+
+        public ActionResult Sendbox(string p)
+        {
+            var messagelist = mm.GetListSendbox(p);
             return View(messagelist);
         }
 
@@ -36,11 +42,6 @@ namespace MvcProjeKampi.Controllers
             return View(values);
         }
 
-        public ActionResult Sendbox()
-        {
-            var messagelist = mm.GetListSendbox();
-            return View(messagelist);
-        }
         [HttpGet]
         public ActionResult NewMessage()
         {

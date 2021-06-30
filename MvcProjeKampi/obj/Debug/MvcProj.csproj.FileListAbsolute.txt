@@ -92,3 +92,7 @@ C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\MvcProjeKampi\obj\Debug\MvcPro
 C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\MvcProjeKampi\obj\Debug\MvcProjeKampi.pdb
 C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\MvcProjeKampi\bin\FluentValidation.dll
 C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\MvcProjeKampi\bin\FluentValidation.xml
+C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\MvcProjeKampi\bin\PagedList.dll
+C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\MvcProjeKampi\bin\PagedList.Mvc.dll
+C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\MvcProjeKampi\bin\PagedList.xml
+C:\Users\Mustafa Harun\source\repos\MvcProjeKampi\MvcProjeKampi\bin\PagedList.Mvc.xml

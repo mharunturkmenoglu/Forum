@@ -18,17 +18,17 @@ namespace BusinessLayer.Concrete
             _contentDal = contentDal;
         }
 
-        public void CategoryAddBL(Content content)
+        public void ContentAdd(Content content)
         {
             _contentDal.Insert(content);
         }
 
-        public void CategoryDelete(Content content)
+        public void ContentDelete(Content content)
         {
             _contentDal.Delete(content);
         }
 
-        public void CategoryUpdate(Content content)
+        public void ContentUpdate(Content content)
         {
             _contentDal.Update(content);
         }

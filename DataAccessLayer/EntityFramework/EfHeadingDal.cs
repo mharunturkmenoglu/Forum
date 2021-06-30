@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessLayer.Entity_Framework
+namespace DataAccessLayer.EntityFramework
 {
     public class EfHeadingDal : GenericRepository<Heading>, IHeadingDal
     {
