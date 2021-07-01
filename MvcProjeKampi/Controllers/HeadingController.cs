@@ -14,11 +14,19 @@ namespace MvcProjeKampi.Controllers
         HeadingManager hm = new HeadingManager(new EfHeadingDal());
         CategoryManager cm = new CategoryManager(new EfCategoryDal());
         WriterManager wm = new WriterManager(new EfWriterDal());
+
         public ActionResult Index()
         {
             var headingValue = hm.GetList();
             return View(headingValue);
         }
+
+        public ActionResult HeadingReport()
+        {
+            var headingValue = hm.GetList();
+            return View(headingValue);
+        }
+
         [HttpGet]
         public ActionResult AddHeading()
         { 
@@ -72,5 +80,6 @@ namespace MvcProjeKampi.Controllers
             hm.HeadingUpdate(headingvalue);
             return RedirectToAction("Index");
         }
+
     }
 }
