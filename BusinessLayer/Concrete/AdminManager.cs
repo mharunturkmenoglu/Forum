@@ -19,6 +19,21 @@ namespace BusinessLayer.Concrete
             _admin = admin;
         }
 
+        public void AdminAddBL(Admin admin)
+        {
+            _admin.Insert(admin);
+        }
+
+        public void AdminDelete(Admin admin)
+        {
+            _admin.Delete(admin);
+        }
+
+        public void AdminUpdate(Admin admin)
+        {
+            _admin.Update(admin);
+        }
+
         public string ComputeSha256Hash(string rawData)
         {
             // Create a SHA256   
@@ -40,9 +55,12 @@ namespace BusinessLayer.Concrete
         public Admin EncyrptAdminValues(Admin admin)
         {
             admin.AdminPassword = ComputeSha256Hash(admin.AdminPassword);
-            admin.AdminUserName = ComputeSha256Hash(admin.AdminUserName);
-
             return admin;
+        }
+
+        public Admin GetByID(int id)
+        {
+            return _admin.Get(x => x.AdminID == id);
         }
 
         public Admin GetByValues(Admin admin)
@@ -50,5 +68,9 @@ namespace BusinessLayer.Concrete
             return _admin.Get(x => x.AdminUserName == admin.AdminUserName && x.AdminPassword == admin.AdminPassword);
         }
 
+        public List<Admin> GetList()
+        {
+            return _admin.List();
+        }
     }
 }
